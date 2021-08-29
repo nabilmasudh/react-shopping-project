@@ -1,0 +1,116 @@
+.cart-sidebar-center{
+    display: flex;
+}
+.cart-sidebar{
+    position: fixed;
+    height: 100%;
+    width: 90%;
+    top: 0;
+    right: 0;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.4s;
+    transform: translate(100%);
+    z-index: 100;
+}
+.cart-sidebar-show{
+    transform: translate(0);
+    display: block;
+}
+.cart-sidebar-inner{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    margin: 15px;
+}
+.sidebar-top{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    cursor: pointer;
+}
+.sidebar-top button{
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+
+}
+.sidebar-middle{
+    flex: 18;
+    overflow: auto;
+}
+.sidebar-middle-inner{
+    display: flex;
+    flex-flow: column;
+    border-bottom: 1px solid #e2e2e2;
+}
+.sidebar-middle-inner p{
+    font-size: 14px;
+}
+.cart-amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.cart-amount button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.cart-quantitiy{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 16px;
+}
+.cart-quantitiy button{
+    padding: 8px;
+    margin: 5px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cart-quantitiy button:hover{
+    background: #626262;
+    color: #FFF;
+}
+.sidebar-bottom{
+    flex: 3;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+.cart-Total{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.cart-Total span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #626262;
+}
+.sidebar-bottom button{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    background: #a5a3a3;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+.sidebar-bottom button a{
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.4s;
+}
+.sidebar-bottom button:hover, .sidebar-bottom button a:hover{
+    background: #626262;
+    color: #FFF;
+}
