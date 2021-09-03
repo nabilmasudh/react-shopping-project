@@ -85,7 +85,7 @@ const Navbar = () => {
                         <div className='nav-right' ref={linksContainerRef}>
                             <div className='nav-right-inner' ref={linksRef}>
                                 <div className='nav-rigth-one' >
-                                    <li><Link to='#'>All Shops</Link></li>
+                                    <li><Link to='/allshop'>All Shops</Link></li>
                                     <li><Link to='#'>Gift Card</Link></li>
                                     <li><Link to='#'>Campaigns</Link></li>
                                     <li><Link to='#'>Top-up</Link></li>

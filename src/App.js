@@ -23,6 +23,9 @@ const App = () => {
           <Product/>
           <ProductTwo/>
         </Route>
+        <Route path='/allshop'>
+          <ProductTwo/>
+        </Route>
         <Route path='/detailone/:id'>
           <DetailOne/>
         </Route>
